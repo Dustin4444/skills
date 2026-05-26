@@ -23,19 +23,14 @@
 [![GitHub pull requests by-label](https://img.shields.io/github/issues-pr-raw/base/skills)](https://github.com/base/skills/pulls)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/base/skills.svg)](https://github.com/base/skills/issues)
 
-## Available Skills
+## Recommended Skills
 
-| Skill | Description |
-| ----- | ----------- |
-| [Adding Builder Codes](./skills/adding-builder-codes/SKILL.md) | Appends Base builder codes to transactions across Privy, Wagmi, Viem, and standard Ethereum RPC implementations. Automatically detects the user's framework before applying the correct integration pattern. |
-| [Building with Base Account](./skills/building-with-base-account/SKILL.md) | Integrates Base Account SDK for authentication and payments, including SIWB, Base Pay, Paymasters, Sub Accounts, and Spend Permissions. |
-| [Connecting to Base Network](./skills/connecting-to-base-network/SKILL.md) | Provides Base Mainnet and Sepolia network configuration, RPC endpoints, chain IDs, and explorer URLs. |
-| [Converting Farcaster Miniapp to App](./skills/convert-farcaster-miniapp-to-app/SKILL.md) | Converts Farcaster Mini App SDK projects into regular Base web apps, with an option to preserve a small separate Farcaster-specific surface when needed. |
-| [Deploying Contracts on Base](./skills/deploying-contracts-on-base/SKILL.md) | Deploys and verifies contracts on Base with Foundry, plus common troubleshooting guidance. |
-| [Running a Base Node](./skills/running-a-base-node/SKILL.md) | Covers production node setup, hardware requirements, networking ports, and syncing guidance. |
-| [Converting MiniKit to Farcaster](./skills/converting-minikit-to-farcaster/SKILL.md) | Migrates Mini Apps from MiniKit (OnchainKit) to native Farcaster SDK with mappings, examples, and pitfalls. |
-| [Migrating an OnchainKit App](./skills/migrating-an-onchainkit-app/SKILL.md) | Migrates apps from @coinbase/onchainkit to standalone wagmi/viem components, replacing the provider, wallet, and transaction components. |
-| [Registering an Agent on Base](./skills/registering-agent-base-dev/SKILL.md) | Registers an agent wallet with the Base builder code API and wires ERC-8021 transaction attribution into viem, ethers, or managed signing services. |
+Two consolidated skills that cover the most common use cases. Each uses progressive reference loading — the skill loads a single entry point and pulls in detailed references only when needed.
+
+| Skill | Install | Description |
+| ----- | ------- | ----------- |
+| [build-on-base](./skills/build-on-base/SKILL.md) | `npx skills add base/skills --skill build-on-base` | Complete Base development playbook: network, contracts, wallet auth, payments, attribution, and migrations. Consolidates all individual skills into one. |
+| [base-mcp](./skills/base-mcp/SKILL.md) | `npx skills add base/skills --skill base-mcp` | Base MCP server — gives your AI assistant a wallet via mcp.base.org. Sending, swapping, signing, batched calls, balances, and partner plugins for lending, swaps, and more. |
 
 ## Installation
 
